@@ -41,7 +41,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           sudo apt update
-          sudo apt install -y python3 python3-pip python3-venv nodejs npm nginx git
+          sudo apt install -y python3 python3-pip python3-venv nodejs  nginx git
           sudo mkdir -p /var/www/myapp
           git clone https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git /var/www/myapp
           sudo chown -R ${{ secrets.SSH_USER }}:www-data /var/www/myapp
