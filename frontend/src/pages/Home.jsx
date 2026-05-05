@@ -29,7 +29,7 @@ export default function Home() {
         </p>
         <p className="location">{profile.location}</p>
         <div className="links">
-          <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/MuhammadArslan007/" target="_blank" rel="noreferrer">GitHub</a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
